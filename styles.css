@@ -1,0 +1,24 @@
+header h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    border-top: 5px;
+}
+header p{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    :hover{color: red;}
+    list-style: none;
+    
+}
+.portfolio ul{
+  display: flex;
+  flex-direction: column;
+} 
