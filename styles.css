@@ -65,3 +65,11 @@ body{
 .veneno {
     background-color: #9C27B0;
 }
+
+.fogo {
+    background-color: #ff6106;
+}
+
+.voador{
+     background: linear-gradient(to bottom, #21c5f7 50%, #898a8a 50%);
+}
