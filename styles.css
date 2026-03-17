@@ -40,7 +40,6 @@ body{
     padding: 20px;
     text-align: center;
     box-shadow: 0 8px 12px rgba(10, 10, 10, 1);
-   
 }
 
 .tipos {
@@ -59,7 +58,7 @@ body{
 }
 
 .planta {
-    background-color: #4CAF50;
+    background-color: #134d15;
 }
 
 .veneno {
@@ -72,4 +71,16 @@ body{
 
 .voador{
      background: linear-gradient(to bottom, #21c5f7 50%, #898a8a 50%);
+}
+
+.agua{
+    background-color: #21c5f7;
+}
+
+.inseto{
+    background-color: #4CAF50;
+}
+
+.eletrico{
+    background-color: #eef11b;
 }
