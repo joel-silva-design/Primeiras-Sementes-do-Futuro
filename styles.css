@@ -37,10 +37,19 @@ body{
 
 .cartao {
     background-color: white;
-    border-radius: 15px;
+    border-radius: 200px;
     padding: 20px;
     text-align: center;
     box-shadow: 5px 8px 12px rgba(10, 10, 10, 1);
+    position: relative;
+    z-index: 2;
+    overflow: hidden
+
+}
+
+.cartao img{
+    position: relative;
+    z-index: 2;
 }
 
 .btn-treinar {
@@ -80,7 +89,6 @@ body{
     color: white;
     font-size: 14px;
     font-weight: bold;
-    
 }
 
 .planta {
@@ -96,7 +104,7 @@ body{
 }
 
 .voador{
-     background: linear-gradient(150deg, #21c5f7 50%, #898a8a 50%)
+    background: linear-gradient(150deg, #21c5f7 50%, #898a8a 50%)
 }   
 
 .agua{
@@ -111,7 +119,8 @@ body{
     background-color: #eef11b;
 }
 
-@keyframes andar{
+
+@keyframes pular{
     0%{ transform: translateY(0px);}
 
     25%{ transform: translateY(15px); }
@@ -124,5 +133,117 @@ body{
 }
 
 .cartao img {
-    animation: andar 3s linear infinite;
+    animation: pular 3s linear infinite;
+}
+
+@keyframes voo{
+    0%{ transform: translate(0px,0px); }
+    25%{ transform: translate(30px, 0px);}
+    50%{ transform: translate(0px, -30px);}
+    75%{ transform: translate(-30px, 0px); }
+    100%{ transform: translate(0px, 0px); }
+}
+
+.voar:hover img {
+    animation: voo 3s linear infinite;
+}
+
+@keyframes abanar {
+    0% { transform: translateX(0px); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0px); }
+}
+
+.tremor:hover img {
+    animation: abanar 0.3s ease infinite;
+}
+
+.spinner{
+    width: 50px;
+    height: 50px;
+    border: 5px solid black;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: girar 1s linear infinite;
+}
+
+@keyframes girar {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.procura{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    justify-content: space-around;
+}
+
+.novos{
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.procura:hover{
+    background-color: rgb(81, 81, 81);
+
+}
+.procura:hover .spinner{
+    border: 5px solid white;
+    border-top: 5px solid #e20fb4;
+    
+}
+
+.cartao:hover{
+    background: linear-gradient(to bottom, #ff0000 49%, #000000 49%, #000000 51%, #ffffff 51%);
+    border: black solid 5px;
+    border-collapse: 5px solid rgb(79, 19, 243);
+    
+}
+
+.esfera {
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+    border: 4px solid #000000;  
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.cartao:hover .esfera{
+    opacity: 1;
+    max-height: 50px;    
+}
+
+.centro-esfera{
+    overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #fcfbfb;
+    border-radius: 50%;
+    border: 2px solid #000000;  
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.cartao:hover .centro-esfera{
+    opacity: 1;
+    max-height: 30px;
+
 }
