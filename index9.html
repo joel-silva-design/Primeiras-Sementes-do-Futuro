@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando com Root</title>
+    <link rel="stylesheet" href="./styles9.css">
+</head>
+<body class="cartao">
+    <header>
+        <h1>Titulo do Site</h1>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Sobre</li>
+                <li>Projetos</li>
+                <li>Curiosidades</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <button class="cartao__botao">Modo do Site</button>
+        <h2>Introdução</h2>
+        <p class="texto-int">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, qui commodi.</p>
+
+        <h2>Desenvolvimento</h2>
+        <p class="texto-dsn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus animi, quia, repellat ipsa corporis ad quam assumenda vel consequatur placeat consequuntur cum magnam et quisquam nostrum dicta, excepturi minima illo.</p>
+
+        <h2>Conclusão</h2>
+        <p class="texto-cls">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium velit repellendus rerum commodi dolorum exercitationem minima quasi, maiores nihil?</p>
+
+
+    </main>
+</body>
+<script>
+    const botao = document.querySelector('.cartao__botao');
+const cartao = document.querySelector('.cartao');
+botao.addEventListener('click', () => {
+    cartao.classList.toggle('cartao--escuro');
+});
+</script>
+</html>
