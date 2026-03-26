@@ -51,8 +51,6 @@
 }
 
 .cartao--escuro .cartao__botao{
-    background-color: var(--fundo-padrao);
-    color: var(--cor-padrao);
     transition: all var(--transicao-lenta);
 }
 
@@ -102,8 +100,36 @@ ul{
     margin-right: 50px;
 }
 
+#icn-home{
+    background-image: url(./svg/home-svgrepo-com.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+#icn-about{
+    background-image: url(./svg/about-svgrepo-com.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+#icn-projects{
+    background-image: url(./svg/projects-svgrepo-com.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+    
+}
+
+#icn-contato{
+    background-image: url(./svg/user-svgrepo-com.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+}    
+
 header li{
-    border: 2px solid var(--cor-padrao);
     padding: 10px;
     border-radius: 20px;
 }
