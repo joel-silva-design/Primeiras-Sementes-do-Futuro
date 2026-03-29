@@ -1,5 +1,14 @@
-let altura = 0;
-let peso = 79;
+const botao = document.querySelector('.cartao__botao');
+const cartao = document.querySelector('.cartao');
+botao.addEventListener('click', () => {
+cartao.classList.toggle('cartao--escuro');
+});
+
+function lervalores() {
+  let altura_texto = document.querySelector('#minha-altura').value;
+  let altura = parseFloat(altura_texto);
+  let peso_texto = document.querySelector('#meu-peso').value;
+  let peso = parseFloat(peso_texto);
 
 let imc = (peso / altura**2);
 
@@ -20,7 +29,6 @@ if (imc > 0 && imc < 18.5){
 } else {
   console.log("IMC invalido");
 }
-
 let info = `Seu imc é ${imc.toFixed(2)}`;
 
 if (imc > 0 && imc != 'Infinity'){
@@ -28,8 +36,4 @@ console.log (info);
 } else {
   console.log("Digite valores validos para Altura e Peso"); 
 }
-const botao = document.querySelector('.cartao__botao');
-const cartao = document.querySelector('.cartao');
-botao.addEventListener('click', () => {
-cartao.classList.toggle('cartao--escuro');
-});
+}

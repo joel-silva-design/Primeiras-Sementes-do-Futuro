@@ -28,15 +28,19 @@
 
         <h2>Conclusão</h2>
         <p class="texto-cls">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium velit repellendus rerum commodi dolorum exercitationem minima quasi, maiores nihil?</p>
-
+    <section class="calculo-imc">
+        <div>
+            <label for="minha-altura">Digite sua Altura</label>
+            <input type="number" name="minha-altura" id="minha-altura">
+        </div>
+        <div>
+            <label for="minha-altura">Digite seu Peso</label>
+            <input type="number" name="meu-peso" id="meu-peso">
+        </div>
+        <button onclick="lervalores()">Calcular o IMC</button>
+    </section>
 
     </main>
 </body>
-<script src="./script9.js">
-    const botao = document.querySelector('.cartao__botao');
-const cartao = document.querySelector('.cartao');
-botao.addEventListener('click', () => {
-    cartao.classList.toggle('cartao--escuro');
-});
-</script>
+<script src="./script9.js"></script>
 </html>
