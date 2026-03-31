@@ -1,0 +1,28 @@
+.calculadora{
+    box-sizing: 200px;
+    border: 2px solid black;
+    width: 350px;
+    height: 450px;
+    align-self: center;
+    justify-self: center;
+    margin-top: 40px;
+    padding: 15px;
+    
+}
+
+#visor{
+    background-color: gray;
+    padding: 30px 70px;
+    margin-bottom: 20px;
+}
+
+.botoes{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    display: grid;
+}
+
+.botao{
+    width: 70px;
+    height: 75px;
+}

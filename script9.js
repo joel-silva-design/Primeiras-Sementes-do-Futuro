@@ -37,3 +37,4 @@ console.log (info);
   console.log("Digite valores validos para Altura e Peso"); 
 }
 }
+
